@@ -7,11 +7,11 @@ function creditCardValidator(number) {
   });
   const numberArray2 = numberArray.map(function(newNumber){
     if(newNumber > 9){
-      return newNumber[0] + newNumber[1];
+      return parseInt(newNumber.toString().split("")[0])+parseInt(newNumber.toString().split("")[1]);
     }
       return newNumber;
   }); 
-  return numberArray2;
+  return numberArray2.reverse();
 }; 
 
 console.log(creditCardValidator("4204 0707 8046 5320"));

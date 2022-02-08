@@ -22,8 +22,14 @@ number = "4204 0707 8046 5320"
 creditCardValidator(number);
 Expected Output: [4,2,0,4,0,7,0,7,8,0,4,6,5,3,2,0]
 
-Test: It turns multiplies every other number by 2 descending from the final index
+Test: It multiplies every other number by 2 descending from the final index
 code:
 number = "4204 0707 8046 5320"
 creditCardValidator(number);
 Expected Output:[4,4,0,8,0,14,0,14,8,0,4,12,5,6,2,0]
+
+Test: "It adds double digit numbers first number with second number"
+code:
+number = "4204 0707 8046 5320"
+creditCardValidator(number);
+Expected Output:[4,4,0,8,0,5,0,5,8,0,4,3,5,6,2,0]
